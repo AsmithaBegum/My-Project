@@ -1,0 +1,276 @@
+/* Global Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  body {
+    background-image: 'D:\illustro8\food2\public\background.jpg';
+    background: none;
+    background-size: none;
+  }
+  .your-element-class {
+    background-image: none;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around; /* Use space-around for even spacing or flex-start for alignment to the left */
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  margin-top: 60px; /* To avoid overlap with the fixed navbar */
+  padding: 20px;
+  text-align: center;
+}
+  
+  button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e53d3d;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    padding: 1rem 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  header nav a:hover {
+    background-color: #555;
+  }
+  
+  /* Category Menu */
+  .category-menu {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .category-button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #555;
+  }
+  .categories-container {
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    background-size: none;
+    background-position: none;
+    height: 100vh; /* Adjust based on your layout */
+  }
+  
+  .category {
+    margin: 0;
+    padding: 10px;  /* Adjust as needed */
+    font-size: 1.5rem;
+    color: white;   /* Example styling for text */
+  }
+  
+  
+  /* Food Item Grid */
+  .food-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .food-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .food-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .food-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .food-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .food-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .food-card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6347;
+  }
+  
+  /* Cart Page */
+  .cart {
+    background-color: #fff;
+    padding: 30px;
+    margin: 100px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .cart h2 {
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart ul li {
+    margin: 10px 0;
+    font-size: 30px;
+  }
+  
+  .cart h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  /* Profile Page */
+  .profile {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Top margin for category menu */
+    margin-bottom: 40px;
+  }
+  
+  .profile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .profile p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .food-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .food-card {
+      width: 100%;
+      margin: 0 10px;
+    }
+  
+    header nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .category-menu {
+      flex-direction: column;
+    }
+    /* Home.css */
+    .nav-links {
+      list-style: none;
+      display: flex; /* Ensures horizontal alignment */
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+  }
+  
+    
+}
+  
